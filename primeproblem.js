@@ -1,13 +1,24 @@
-funtion CheckPrime(num){
+function CheckPrime(num){
+    let count=0;
 
-for(var i=j;i<=num;i++){
-if(num%i){
+    for(let i=1;i<=num;i++){
+   if(num%i==0){
+   count++;
 
-return true;
+  return true;
 
 }
 
+
+   return false;
 }
-return false;
+
+  let ans=CheckPrime(17);
+   if(ans==true){
+
+console.log("Prime");
+
+}else{
+
+console.log("Not Prime");
 }
-CheckPrime(17);
