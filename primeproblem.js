@@ -1,4 +1,5 @@
 function CheckPrime(num){
+    
 	let factor = 0	;
 	for(var i=1;i<=num;i++){
 	if(num%i==0){
@@ -7,17 +8,21 @@ function CheckPrime(num){
 }
 if( factor ==2){
 
-return true;
+  return true;
 
 }
-return false;
-
+   return false;
 }
 
-  let  ans = CheckPrime(17);
+  let ans=CheckPrime(17);
+   if(ans==true){
 
- if ( ans == true){
-  console.log( "Prime");
-}else {
+console.log("Prime");
+
+}else{
 console.log("Not Prime");
 }
+
+}  
+ 
+
